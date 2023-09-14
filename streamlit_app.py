@@ -39,28 +39,7 @@ try:
     
 except URLError as e:
   st.error()
- 
-    
-# st.write('The user entered ', fruit_choice)
 
-
-# # st.text(fruityvice_response.json())
-
-
-# # normalize the json output 
-# fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
-# # display the normalised dataframe
-
-
-
-st.stop()
-
-
-# my_cur = my_cnx.cursor()
-# #my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
-# my_cur.execute("SELECT * from fruit_load_list")
-# my_data_rows = my_cur.fetchall()
-# st.header("The fruit load list contains:")
 #snowflake related functions
 def get_fruit_load_list():
   with my_cnx.cursor() as my_cur:
@@ -76,6 +55,6 @@ if st.button('Get Fruit Load List'):
 
 add_my_fruit = st.text_input('What fruit would you like to add?','jackfruit')
 st.write('Thanks for adding ', add_my_fruit)
-
+st.stop()
 
 my_cur.execute("insert into PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST values ('from streamlit')")
