@@ -25,7 +25,7 @@ st.text(fruityvice_response.json())
 
 
 # normalize the json output 
-fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
+fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
 # display the normalised dataframe
 st.dataframe(fruityvice_normalized)
 
