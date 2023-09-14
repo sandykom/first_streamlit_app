@@ -34,7 +34,7 @@ try:
  st.dataframe(fruityvice_normalized)
 
 except URLError as e:
-st.Error()
+  st.error()
  
     
 # st.write('The user entered ', fruit_choice)
