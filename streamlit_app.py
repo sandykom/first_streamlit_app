@@ -1,6 +1,11 @@
-import streamlit
-streamlit.title('I am an early person 🐔')
+import streamlit st
+st.title('I am an early person 🐔')
 
-streamlit.header('learning to add a ine below the title')
-streamlit.text('adding first line below header')
-streamlit.text('adding second line')
+st.header('learning to add a ine below the title')
+st.text('adding first line below header')
+st.text('adding second line')
+
+
+import pandas pd
+my_fruit_list = pd.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
+st.dataframe(my_fruit_list)
