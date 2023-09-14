@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import requests
 import snowflake.connector
-from urllib,.error import URLError
+from urllib.error import URLError
 
 
 st.title('I am an early person 🐔')
