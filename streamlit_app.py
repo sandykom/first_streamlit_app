@@ -1,2 +1,2 @@
 import streamlit
-streamlit.title('I'm an early person')
+streamlit.title('I am an early person')
